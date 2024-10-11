@@ -1,0 +1,243 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #4d2d1a;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.logo-text {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #4d2d1a; 
+    margin-left: 10px; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-menu {
+    display: flex;
+    align-items: center;
+}
+
+.cart-menu a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.main {
+    color: white;
+    padding: 50px 20px;
+    flex: 1;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('gambar12.png'); 
+    background-size: cover; 
+    background-position: center; 
+    filter: brightness(50%); 
+    z-index: 0; 
+}
+
+.main > * {
+    position: relative; 
+    z-index: 1; 
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text-container {
+    text-align: left;
+    max-width: 50%;
+}
+
+.welcome-text {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sub-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.best-coffee-title {
+    font-size: 36px;
+    color: #fff;
+}
+
+.coffee-image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.large-coffee-icon {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-row {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+}
+
+.item {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.menu-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.menu-box:hover {
+    transform: scale(1.05);
+}
+
+.menu-img {
+    width: 250px; 
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.order-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.order-button {
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #555;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.footer-bg {
+    background-image: url('gambar4.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    filter: brightness(50%);
+}
+
+.get-close {
+    font-size: 24px;
+}
+
+.contact-us {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media a i {
+    margin-right: 5px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
